@@ -18,6 +18,7 @@ public abstract class Monster {
 		itemDropChance = itmDrpChnc;
 		spawnRate = spwnR;
 		health = hlth;
+		
 	}
 	
 	public abstract int calculateSpawn(int roomNumber, int toughNum, int difficulty);
