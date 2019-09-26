@@ -20,7 +20,7 @@ public class Monster {
 	}
 	
 	public Monster(double dmg, double armPP, int itmDrp, 
-				   double itmDrpChnc, double spwnR, int hlth, String typ) {
+				   double itmDrpChnc, double spwnR, int hlth) {
 		damage = dmg;
 		armorPenPercent = armPP;
 		itemDrop = itmDrp;
