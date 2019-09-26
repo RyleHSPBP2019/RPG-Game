@@ -29,4 +29,5 @@ public class Monster {
 		health = hlth;
 	}
 	
+	
 }
