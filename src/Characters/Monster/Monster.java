@@ -36,5 +36,9 @@ public class Monster {
 		health = hlth;
 		type = typ;
 	}
+	
+	public String getMonsterType() {
+		return type;
+	}
 
 }
