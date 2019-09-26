@@ -7,12 +7,6 @@ public class Monster {
 	private double itemDropChance; // ex. (30% = 30.0)
 	private double spawnRate;
 	private int health;
-	private String type; // type will be a monster string from the data below
-	private String[] monsters = {"Wolf", "Spider", 
-								 "Wraith", "Orc", 
-								 "Undead", "Witch",
-								 "Vampire", "Werewolf",
-								 "Giant Snake", "Dragon"}; // in order of difficulty
 	
 	// constructor methods
 	
@@ -23,7 +17,6 @@ public class Monster {
 		itemDropChance = 30.0;
 		spawnRate = 1.0;
 		health = 100;
-		type = monsters[0];
 	}
 	
 	public Monster(double dmg, double armPP, int itmDrp, 
@@ -34,7 +27,6 @@ public class Monster {
 		itemDropChance = itmDrpChnc;
 		spawnRate = spwnR;
 		health = hlth;
-		type = typ;
 	}
 
 }
