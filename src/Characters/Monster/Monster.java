@@ -28,5 +28,5 @@ public class Monster {
 		spawnRate = spwnR;
 		health = hlth;
 	}
-
+	
 }
