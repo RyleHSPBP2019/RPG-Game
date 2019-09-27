@@ -22,7 +22,7 @@ public abstract class Monster {
 	}
 	public int calculateStr()
 	{
-		return (int) ((damage+armorPenPercent)*health);
+		return (int) ((damage + armorPenPercent) * health);
 	}
 	
 	public abstract int calculateSpawn(int roomNumber, int toughNum, int difficulty);
