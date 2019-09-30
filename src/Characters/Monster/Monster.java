@@ -1,6 +1,6 @@
 package Characters.Monster;
 
-public abstract class Monster {
+public class Monster {
 	private double damage;
 	private double armorPenPercent; // armor pens works as so: (for every amount of damage, the penetration value is a certain percentage of that added on)
 	private int itemDrop; // drops are inside an array, so we call a number instead of an object
@@ -18,13 +18,11 @@ public abstract class Monster {
 		itemDropChance = itmDrpChnc;
 		spawnRate = spwnR;
 		health = hlth;
-		
-	}
-	public int calculateStr()
-	{
-		return (int) ((damage + armorPenPercent) * health);
 	}
 	
-	public abstract int calculateSpawn(int roomNumber, int toughNum, int difficulty);
+	public double calculatePowerLevel()
+	{
+		return ((damage + armorPenPercent) * health);
+	}
 	
 }
