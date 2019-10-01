@@ -2,12 +2,11 @@ package Characters.Monster;
 
 public class Undead extends Monster {
 
-	public Undead(double dmg, double armPP, int itmDrp, double itmDrpChnc, int hlth) {
-		super(dmg, armPP, itmDrp, itmDrpChnc, hlth);
+	public Undead(double dmg, double armPP, int itmDrp, int hlth) {
+		super(dmg, armPP, itmDrp, hlth);
 		dmg = 20.0;
 		armPP = 14.0;
 		itmDrp = 0;
-		itmDrpChnc = 30.0;
 		hlth = 200;
 	}
 	

@@ -2,12 +2,11 @@ package Characters.Monster;
 
 public class Wolf extends Monster {
 	
-	public Wolf(double dmg, double armPP, int itmDrp, double itmDrpChnc, int hlth) {
-		super(dmg, armPP, itmDrp, itmDrpChnc, hlth);
+	public Wolf(double dmg, double armPP, int itmDrp, int hlth) {
+		super(dmg, armPP, itmDrp, hlth);
 		dmg = 10.0;
 		armPP = 10.0;
 		itmDrp = 0;
-		itmDrpChnc = 30.0;
 		hlth = 100;
 	}
 	
