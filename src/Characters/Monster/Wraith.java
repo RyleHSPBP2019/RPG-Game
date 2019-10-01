@@ -17,7 +17,5 @@ public class Wraith extends Monster {
 	public void flyAttack() { //main attack
 		
 	}
-	
-	
 
 }

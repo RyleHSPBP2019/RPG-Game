@@ -18,5 +18,4 @@ public class Undead extends Monster {
 		
 	}
 	
-
 }
