@@ -23,4 +23,5 @@ public class Monster {
 		return ((damage + armorPenPercent) * health);
 	}
 	
+	
 }

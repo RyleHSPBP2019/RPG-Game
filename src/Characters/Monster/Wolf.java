@@ -18,5 +18,6 @@ public class Wolf extends Monster {
 	public void slashAttack() { // main attack
 		
 	}
+	
 
 }

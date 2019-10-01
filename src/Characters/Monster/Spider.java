@@ -18,5 +18,6 @@ public class Spider extends Monster {
 	public void pierce() { //main attack
 		
 	}
+	
 
 }

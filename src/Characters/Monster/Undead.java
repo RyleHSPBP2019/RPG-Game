@@ -18,5 +18,6 @@ public class Undead extends Monster {
 	public void smack() { //main attack
 		
 	}
+	
 
 }

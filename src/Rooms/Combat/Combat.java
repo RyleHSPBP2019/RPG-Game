@@ -13,5 +13,6 @@ public class Combat {
 		// if statement here once done
 		return 0;
 	}
+	
 
 }
