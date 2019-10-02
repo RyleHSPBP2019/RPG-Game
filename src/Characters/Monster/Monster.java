@@ -18,7 +18,7 @@ public class Monster {
 	
 	public double getPowerLevel()
 	{
-		return ((damage + armorPenPercent) * health);
+		return (.5*damage + .5*armorPenPercent + .1*health);
 	}
 	
 	
