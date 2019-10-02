@@ -59,7 +59,6 @@ public class randomMonster {
 	int dragonMinHp = 550, dragonMaxHp = 1045;
 
 
-
 	 
 	for (int i = 0; i < 100; i++) 
 		{
