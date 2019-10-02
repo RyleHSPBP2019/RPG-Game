@@ -8,12 +8,12 @@ public class randomMonster {
 	Random rand = new Random();
 	double avgStr[] = new double[16];
 	Wolf wolves[] = new Wolf[100];
-	int wolfMinPen = 0, wolfMaxPen = 0;
-	int wolfMinDmg = 0, wolfMaxDmg = 0;
+	int wolfMinPen = 10, wolfMaxPen = 15;
+	int wolfMinDmg = 10, wolfMaxDmg = 20;
 	int wolfMinDrp = 0, wolfMaxDrp = 0;
-	int wolfMinHp = 0, wolfMaxHp = 0;
+	int wolfMinHp = 100, wolfMaxHp = 190;
 	Spider spiders[] = new Spider[100];
-	int spiderMinPen = 0, spiderMaxPen = 0;
+	int spiderMinPen = 12, spiderMaxPen = 0;
 	int spiderMinDmg = 0, spiderMaxDmg = 0;
 	int spiderMinDrp = 0, spiderMaxDrp = 0;
 	int spiderMinHp = 0, spiderMaxHp = 0;

@@ -2,7 +2,6 @@ package Items.Clothes;
 
 import enums.ArmorStyle;
 import enums.Material;
-import enums.Rarity;
 
 public class Gauntlets extends Clothes {
 
@@ -10,9 +9,15 @@ public class Gauntlets extends Clothes {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Gauntlets(ArmorStyle Type, Material Material, Rarity Rarity, int Quality) {
-		super(Type, Material, Rarity, Quality);
+	public Gauntlets(ArmorStyle Type, Material Material, int Quality) {
+		super(Type, Material, Quality);
 		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void totalArmor() {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

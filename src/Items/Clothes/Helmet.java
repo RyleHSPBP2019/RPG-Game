@@ -4,14 +4,14 @@ import enums.ArmorStyle;
 import enums.Material;
 import enums.Rarity;
 
-public class Helmate extends Clothes {
+public class Helmet extends Clothes {
 	double armor;
 	double helmateMod = .25;
-	public Helmate() {
+	public Helmet() {
 		
 	}
 
-	public Helmate(ArmorStyle Type, Material Material , int Quality) {
+	public Helmet(ArmorStyle Type, Material Material , int Quality) {
 		super(Type, Material, Quality);
 		// TODO Auto-generated constructor stub
 	}
