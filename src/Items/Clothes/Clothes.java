@@ -1,26 +1,27 @@
 package Items.Clothes;
 
 import enums.ArmorStyle;
-import enums.Material;
+import enums.ClothingMaterials;
 import enums.Rarity;
 
 public abstract class Clothes {
 	ArmorStyle type;
-	Material material;
+	ClothingMaterials material;
 	Rarity rarity;
 	int quality,armorValue,materialValue,typeValue, movementMod;
 	
 	public Clothes()
 	{
 		type = ArmorStyle.chain;
-		material = Material.cloth;
+		material = ClothingMaterials.Cloth;
 		quality = 5;
 		armorValue();
 		rarity = calculateRarity();
 
 		
 	}
-	public Clothes(ArmorStyle Type, Material Material, int Quality)
+	
+	public Clothes(ArmorStyle Type, ClothingMaterials Material, int Quality)
 	{
 		type = Type;
 		material = Material;
@@ -28,6 +29,7 @@ public abstract class Clothes {
 		armorValue();
 		rarity = calculateRarity();
 	}
+	
 	public int armorValue()
 	{
 		switch(type)
@@ -51,43 +53,45 @@ public abstract class Clothes {
 		}
 		switch(material)
 		{
-		case cloth:
+		case Cloth:
 			materialValue = 1;
 			break;
-		case leather:
+		case Leather:
 			materialValue = 2;
 			break;
-		case iron:
+		case Iron:
 			materialValue = 3;
 			break;
-		case steel:
+		case Steel:
 			materialValue = 4;
 			break;
-		case adamantine:
+		case Adamantine:
 			materialValue = 5;
 			break;
 		}
-		armorValue = (typeValue+materialValue)*quality;
+		armorValue = (typeValue + materialValue) * quality;
 
-		return (typeValue+materialValue)*quality;
+		return (typeValue + materialValue) * quality;
 	}
+	
 	public Rarity calculateRarity()
 	{
-		Rarity value = Rarity.common;
+		Rarity value = Rarity.Common;
 		if (armorValue < 25)
-			value = Rarity.common;
+			value = Rarity.Common;
 		else if(armorValue < 60)
-			value = Rarity.uncommon;
+			value = Rarity.Uncommon;
 		else if(armorValue < 80)
-			value = Rarity.rare;
+			value = Rarity.Rare;
 		else if (armorValue < 100)
-			value = Rarity.epic;
+			value = Rarity.Epic;
 		else if (armorValue < 120)
-			value = Rarity.lengendary;
+			value = Rarity.Lengendary;
 		else
-			value = Rarity.godLike;
+			value = Rarity.GodLike;
 		
 		return value;
 	}
+	
 	public abstract void totalArmor();
 }

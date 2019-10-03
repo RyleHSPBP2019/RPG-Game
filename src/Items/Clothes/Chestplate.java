@@ -1,7 +1,7 @@
 package Items.Clothes;
 
 import enums.ArmorStyle;
-import enums.Material;
+import enums.ClothingMaterials;
 
 public class Chestplate extends Clothes {
 
@@ -9,7 +9,7 @@ public class Chestplate extends Clothes {
 
 	}
 
-	public Chestplate(ArmorStyle Type, Material Material, int Quality) {
+	public Chestplate(ArmorStyle Type, ClothingMaterials Material, int Quality) {
 		super(Type, Material, Quality);
 		
 

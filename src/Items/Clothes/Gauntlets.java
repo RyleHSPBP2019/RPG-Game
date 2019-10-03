@@ -1,7 +1,7 @@
 package Items.Clothes;
 
 import enums.ArmorStyle;
-import enums.Material;
+import enums.ClothingMaterials;
 
 public class Gauntlets extends Clothes {
 
@@ -9,7 +9,7 @@ public class Gauntlets extends Clothes {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Gauntlets(ArmorStyle Type, Material Material, int Quality) {
+	public Gauntlets(ArmorStyle Type, ClothingMaterials Material, int Quality) {
 		super(Type, Material, Quality);
 		// TODO Auto-generated constructor stub
 	}

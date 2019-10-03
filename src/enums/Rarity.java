@@ -1,10 +1,10 @@
 package enums;
 
 public enum Rarity {
-	common,
-	uncommon,
-	rare,
-	epic,
-	lengendary,
-	godLike
+	Common,
+	Uncommon,
+	Rare,
+	Epic,
+	Lengendary,
+	GodLike
 }

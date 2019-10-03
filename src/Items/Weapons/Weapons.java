@@ -1,15 +1,14 @@
 package Items.Weapons;
 
 public class Weapons {
-	int damage = 5;
+	double damage = 5.0;
 	
-	public Weapons()
-	{
-		damage = 10;
+	public Weapons() {
+		damage = 10.0;
 	}
-	public Weapons(int Damage,int range)
-	{
-		damage = Damage;
+	
+	public double getDamage() {
+		return damage;
 	}
 
 }
