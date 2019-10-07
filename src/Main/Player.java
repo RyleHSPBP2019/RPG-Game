@@ -23,6 +23,7 @@ public class Player {
 	public Player() {	// default player makes everything default
 		health = 100;
 		damage = weapon.getDamage();
+		
 	}
 	
 	
