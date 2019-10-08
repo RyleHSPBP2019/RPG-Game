@@ -6,5 +6,5 @@ public enum Rarity {
 	Rare,
 	Epic,
 	Lengendary,
-	GodLike
+	Godlike
 }
