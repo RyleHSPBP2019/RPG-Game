@@ -3,7 +3,7 @@ import enums.Rarity;
 import enums.WeaponMaterials;
 import enums.WeaponType;
 
-public class Weapons {
+public class Weapon {
 	private double damage;
 	private double speed;
 	private double range;
@@ -15,7 +15,11 @@ public class Weapons {
 	private Rarity rarity;
 	private WeaponType type;
 	
-	public Weapons() { // basic constructor
+	public Weapon() { // basic constructor
+		
+	}
+	
+	public Weapon(double damage, WeaponMaterials material, WeaponType type, double speed, double range) {
 		
 	}
 	
@@ -23,13 +27,13 @@ public class Weapons {
 		int x, y, z; // value holders for amount;
 		
 		switch (material) {
-			case Adamantine:
-				
-				break;
-			case Bronze:
+			case Wood:
 				
 				break;
 			case Copper:
+				
+				break;
+			case Bronze:
 				
 				break;
 			case Iron:
@@ -41,7 +45,7 @@ public class Weapons {
 			case Titanium:
 				
 				break;
-			case Wood:
+			case Adamantine:
 				
 				break;
 		}
@@ -50,7 +54,7 @@ public class Weapons {
 			case Common:
 				
 				break;
-			case Epic:
+			case Uncommon:
 				
 				break;
 			case GodLike:
@@ -62,7 +66,7 @@ public class Weapons {
 			case Rare:
 				
 				break;
-			case Uncommon:
+			case Epic:
 				
 				break;
 		}

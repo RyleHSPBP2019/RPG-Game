@@ -1,6 +1,6 @@
 package Main;
 import Items.Clothes.*;
-import Items.Weapons.Weapons;
+import Items.Weapons.Weapon;
 
 public class Player {
 	// player armor
@@ -11,7 +11,7 @@ public class Player {
 	private Leggings leggings;
 	
 	// player weapon
-	private Weapons weapon;
+	private Weapon weapon;
 	
 	// player values
 	private int health;
