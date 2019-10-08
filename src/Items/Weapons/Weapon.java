@@ -15,15 +15,15 @@ public class Weapon {
 	private Rarity rarity;
 	private WeaponType type;
 	
-	public Weapon() { // basic constructor
-		
+	public Weapon(double Damage, WeaponMaterials Material, WeaponType Type, double Speed, double Range) { // constructor method
+		damage = Damage;
+		material = Material;
+		type = Type;
+		speed = Speed;
+		range = Range;
 	}
 	
-	public Weapon(double damage, WeaponMaterials material, WeaponType type, double speed, double range) {
-		
-	}
-	
-	public void calculateDamage() {
+	public void calculateRarity(double speed, double range, double damage) {
 		
 	}
 	
