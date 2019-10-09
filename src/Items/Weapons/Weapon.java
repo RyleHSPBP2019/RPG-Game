@@ -23,8 +23,9 @@ public class Weapon {
 		range = Range;
 	}
 	
-	public void calculateRarity(double speed, double range, double damage) {
+	public Rarity calculateRarity(double speed, double range, double damage) {
 		
+		return rarity;
 	}
 	
 	public void calculateValue(WeaponMaterials material, Rarity rarity, WeaponType type) {
@@ -129,6 +130,14 @@ public class Weapon {
 	
 	public double getDamage() {
 		return damage;
+	}
+	
+	public double getRange() {
+		return range;
+	}
+	
+	public double getSpeed() {
+		return speed;
 	}
 
 }
