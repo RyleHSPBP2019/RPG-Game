@@ -188,23 +188,6 @@ public class randomMonster {
 			dragons[i] = new Dragon(dmg, armPP, drop, hp);
 			avgStr[9] += dragons[i].getPowerLevel();
 		}
-	avgStr[9]/=100;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
+	avgStr[9]/=100;	
 	}
 }
