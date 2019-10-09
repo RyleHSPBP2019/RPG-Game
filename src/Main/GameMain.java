@@ -16,12 +16,16 @@ import java.awt.event.ActionListener;
 public class GameMain extends Applet implements ActionListener
 {
 	Button easy = new Button("Easy");
+	Button medium = new Button("Medium");
+	Button hard = new Button("Hard");
 	public void init()  
 	   {  
 	      add(easy); 
 	      easy.addActionListener(this);
-	      add(new Button("Medium")); 
-	      add(new Button("Hard"));  
+	      add(medium); 
+	      medium.addActionListener(this);
+	      add(hard);
+	      hard.addActionListener(this);
 	      
 	    }  
 	  public Dimension preferredSize()  
@@ -40,14 +44,28 @@ public class GameMain extends Applet implements ActionListener
 	    }
 	  public void paint(Graphics g)
 	  {
-		  g.drawString("Welcome to the game, choose you difficulty", 10, 10);
+		  g.drawString(Globals.output, 10, 10);
 	  }
 	@Override
 	public void actionPerformed(ActionEvent e) 
 	{
 		if(e.getSource() == easy)
 		{
-			
+			Globals.output = "You have chosen easy";
+			Globals.difficulty = 1;
+			repaint();
+		}
+		else if(e.getSource() == medium)
+		{
+			Globals.output = "You have chosen medium";
+			Globals.difficulty = 2;
+			repaint();
+		}
+		else if(e.getSource() == hard)
+		{
+			Globals.output = "You have chosen hard";
+			Globals.difficulty = 3;
+			repaint();
 		}
 		
 	}
