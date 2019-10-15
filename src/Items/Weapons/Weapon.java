@@ -6,7 +6,7 @@ import enums.WeaponType;
 public class Weapon {
 	private double damage;
 	private double speed;
-	private double range;
+	private boolean range;
 	
 	private double sellValue;
 	private double purchaseValue;
@@ -15,7 +15,7 @@ public class Weapon {
 	private Rarity rarity;
 	private WeaponType type;
 	
-	public Weapon(double Damage, WeaponMaterials Material, WeaponType Type, double Speed, double Range) { // constructor method
+	public Weapon(double Damage, WeaponMaterials Material, WeaponType Type, double Speed, boolean Range) { // constructor method
 		damage = Damage;
 		material = Material;
 		type = Type;
@@ -23,7 +23,30 @@ public class Weapon {
 		range = Range;
 	}
 	
-	public Rarity calculateRarity(double speed, double range, double damage) {
+	public Rarity calculateRarity(WeaponMaterials material) {
+		switch (material) {
+			case Wood:
+				rarity = Rarity.Common;
+				break;
+			case Copper:
+				rarity = Rarity.Uncommon;
+				break;
+			case Bronze:
+				rarity = Rarity.Uncommon;
+				break;
+			case Iron:
+				rarity = Rarity.Rare;
+				break;
+			case Steel:
+				rarity = Rarity.Epic;
+				break;
+			case Titanium:
+				rarity = Rarity.Lengendary;
+				break;
+			case Adamantine:
+				rarity = Rarity.Godlike;
+				break;
+		}
 		
 		return rarity;
 	}
@@ -132,7 +155,7 @@ public class Weapon {
 		return damage;
 	}
 	
-	public double getRange() {
+	public boolean isRanged() {
 		return range;
 	}
 	
