@@ -18,12 +18,14 @@ public class Player {
 	private int maxHealth;
 	private int armorAmount;
 	private double damage;
+	private int moneyAmount;
 	
 	// constructor methods
 	
 	public Player() {	// default player makes everything default
 		maxHealth = 100;
 		health = maxHealth;
+		moneyAmount = 0;
 		armorAmount = (boots.armorValue() + chestplate.armorValue() + gauntlets.armorValue() + helmet.armorValue() + leggings.armorValue());
 		damage = weapon.getDamage();
 		// weapon = #finish here keeton
