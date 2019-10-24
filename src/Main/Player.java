@@ -46,6 +46,10 @@ public class Player {
 		}
 	}
 	
+	public void addMoney (int amount) {
+		moneyAmount += amount;
+	}
+	
 	public void changeWeapon(Weapon newWeapon) {
 		weapon = newWeapon;
 	}
