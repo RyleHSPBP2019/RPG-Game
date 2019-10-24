@@ -88,7 +88,7 @@ public abstract class Clothes {
 		else if (armorValue < 120)
 			value = Rarity.Lengendary;
 		else
-			value = Rarity.GodLike;
+			value = Rarity.Godlike;
 		
 		return value;
 	}
