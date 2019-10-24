@@ -149,6 +149,7 @@ public class Weapon {
 		// value setting here
 		purchaseValue = ((0.8 * z) + (x + y));
 		sellValue = ((x + y) - z);
+		
 	}
 	
 	public double getDamage() {
